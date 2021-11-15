@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,400;1,500&family=Source+Sans+Pro&family=Zen+Kaku+Gothic+Antique&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+.header-nav{
+    background-color: #17212d;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.e-commerce{
+    margin-top: 5%;
+}
+.img-session>img{
+    width: 70px;
+    position: relative;
+    top: 142px;
+    left: 46px;
+}
+.img-loader>img{
+    width: 187px;
+    height: 215px;
+    z-index: 0;
+    position: relative;
+    top: 136px;
+    left: -15px;
+    border-radius: 10%;
+    display: none;
+}
+
+#time{
+    color: white;
+    font-size: 27px;
+    position: relative;
+    top: 226px;
+    left: -2px;
+    font-weight: 500;
+}
+#heart-rate-sec{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 159px;
+    left: 10px;
+    font-weight: 500;
+    display: none;
+}
+#heart-rate-sec2{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 112px;
+    left: 61px;
+    font-weight: 500;
+}
+#time>i{
+    font-size: 13px;
+}
+.img-2>img{
+    width: 100px;
+}
+.watch-area{
+    background-image: url(./iOeUBV7.png);
+}
+.watch-image>img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: -152px;
+    z-index: -1;
+}
+.watch-info>h1{
+    padding-bottom: 10px;
+}
+.watch-info>p{
+    color: rgb(93, 90, 90);
+}
+
+.colors-change{
+    list-style-type: none;
+    display: flex;
+}
+.select-color>ul>li{
+    padding-right: 20px;
+}
+.select-color>h3{
+    padding-bottom: 20px;
+}
+.color-1{
+    background-color: #565681;
+    padding: 15px 20px 15px 20px ;
+    color: #565681;
+    border-radius: 10%;
+    width: 85px;
+    height: 55px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color-2{
+    background-color: #8a5362;
+    padding: 15px 20px 15px 20px ;
+    color: #8a5362;
+    border-radius: 10%;
+    width: 85px;
+    height: 55px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color-3{
+    background-color: #23211f;
+    padding: 15px 20px 15px 20px ;
+    color: #23211f;
+    border-radius: 10%;
+    width: 85px;
+    height: 55px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color-4{
+    background-color: #ca3d22;
+    padding: 15px 20px 15px 20px ;
+    color: #ca3d22;
+    border-radius: 10%;
+    width: 85px;
+    height: 55px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color-5{
+    background-color: #e9c7be;
+    padding: 15px 20px 15px 20px ;
+    color: #e9c7be;
+    border-radius: 10%;
+    width: 85px;
+    height: 55px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.watch-info{
+    padding-bottom: 25px;
+}
+.select-color{
+    padding-bottom: 25px;
+}
+.right-watch-info{
+    padding-top: 35px;
+}
+.time{
+    padding: 15px 25px 15px 25px !important;
+}
+.heart-rate{
+    padding: 15px 25px 15px 25px !important;
+}
+.display-none{
+    padding: 15px 25px 15px 25px !important;
+}
+.buttons-js>button{
+    margin-right: 15px !important;
+}
+.buy{
+    margin-top: 19px;
+}
+.buy-Now{
+    padding: 15px 50px 15px 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 7%;
+}
+.buy-Now:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+.modal1{
+    max-width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 2%;
+    padding: 20px;
+    z-index: 10;
+    background-color: white;
+}
+.modal1.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+.modal1>i{
+    font-size: 20px;
+    position: absolute;
+    top: 11px;
+    right: 21px;
+}
+.overlay{
+    position: fixed;
+    /* opacity: 0; */
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgb(0, 0, 0, .5);
+    pointer-events: none;
+    transform:  scale(0);
+    transition: 200ms ease-in-out;
+}
+.overlay.active{
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: all;
+}
+.close-btn{
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 100%;
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    cursor: pointer;
+}
+#close{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}

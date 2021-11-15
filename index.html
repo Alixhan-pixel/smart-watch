@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+   <header>
+       <nav class="header-nav">
+           <img src="./amazon_PNG21.png" alt="" width="130">
+       </nav>
+   </header>
+    <!---Main Section -->
+    <div class="e-commerce">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12" style="padding-top: 10%;">
+                    <div class="watch-area">
+                        <div class="watch-image">
+                            <img id="watch-pic" src="./iOeUBV7.png" alt="">
+                        </div>
+                        <div class="img-loader"><img id="loader" src="./200w.gif" alt="" srcset=""></div>
+                        <div id="time"></div>
+                        <div class="img-2">
+                            <!-- <img  id="heart-rate-sec" src="" alt=""> -->
+                            <div id="heart-rate-sec">
+                                <svg width="140" height="140" viewBox="0 0 200 200">
+                                    <g transform="translate(100 100)">
+                                      <path transform="translate(-50 -50)" fill="tomato" d="M92.71,7.27L92.71,7.27c-9.71-9.69-25.46-9.69-35.18,0L50,14.79l-7.54-7.52C32.75-2.42,17-2.42,7.29,7.27v0 c-9.71,9.69-9.71,25.41,0,35.1L50,85l42.71-42.63C102.43,32.68,102.43,16.96,92.71,7.27z"></path>
+                                      <animateTransform 
+                                          attributeName="transform" 
+                                          type="scale" 
+                                          values="1; 1.5; 1.25; 1.5; 1.5; 1;" 
+                                          dur="1s" 
+                                          repeatCount="indefinite"
+                                          additive="sum">      
+                                      </animateTransform>
+                                  </g>
+                                </svg>
+                            </div>
+                            <span id="heart-rate-sec2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12 right-watch-info">
+                    <div class="watch-info">
+                        <h1>FitBit-19 The Smartest Watch</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae expedita deleniti tempora vero. Id deleniti aspernatur magnam aperiam eaque iure asperiores, error aliquid veritatis, eius quidem quisquam ad temporibus commodi?</p>
+                    </div>
+                    <hr>
+                    <div class="select-color">
+                        <h3>Select Colors</h3>
+                       <div class="colors-change">
+                           <div class="color-1" id="purple"></div>
+                           <div class="color-2" id="pink"></div>
+                           <div class="color-3" id="black"></div>
+                           <div class="color-4" id="orange"></div>
+                           <div class="color-5" id="skin"></div>
+                       </div>
+                    </div>
+                    <hr>
+                    <div class="buttons-js">
+                        <h3>Features</h3>
+                        <button class="btn time">Time</button>
+                        <button class="btn heart-rate">Heart-Rate</button>
+                        <button class="btn display-none">Screen Saver</button>
+                    </div>
+                    <div class="buy">
+                        <h3>Buy Now!</h3>
+                        <button id="trigger1"  class="buy-Now">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal1" id="modal1">
+        <button class="close-btn"><i class="fas fa-times" id="close"></i></button>
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Name</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Enter Your Full Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Street, Block, Sector">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>Punjab</option>
+                  <option>Sindh</option>
+                  <option>blochistan</option>
+                  <option>KPK</option>
+                  <option>Kashmir</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
